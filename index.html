@@ -2,22 +2,32 @@
 <html>
   <head>
     <style>
-       @media only screen and (max-width: 600px) {
-        img {
-          height: 150px;
-          width: 150px;
-        }
-      }
-      /* Run on https://autoprefixer.github.io/ to compile CSS */
       body{background-color: black}
       p{color: grey}
-      .loading {
+
+       .sizer {
         position: absolute;
         top: 50%;
         left: 50%;
         margin: -15px 0 0 -15px;
-        height: 60px;
-        width: 60px;
+        height: 75px;
+        width: 75px;
+      }
+      .sizer2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -15px 0 0 -15px;
+        height: 200px;
+        width: 200px;
+      }
+        .rolling {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -15px 0 0 -15px;
+        height: 50px;
+        width: 50px;
         border: 2px solid #ddd;
         border-left-color: #00FF00;
         border-radius: 30px; /* border-radius: 50% */
@@ -40,10 +50,9 @@
 
     </style>
       <title>Kiwisplayer!</title><!--https://kiwiplay.alwaysdata.net/-->
-      <meta http-equiv = "refresh" content = "4; url =https://kiwiplay.alwaysdata.net/ ">
+      <meta http-equiv = "refresh" content = "4; url =">
     </head>
   <body>
-    <div class="loading" ><img src="https://i.imgur.com/R4sYAnl.png" width="60%" 
-     height="60%" ></img></div>
+    <div class="rolling"><img src="https://i.imgur.com/R4sYAnl.png" class="sizer" ></img></div>
   </body>
 </html>
